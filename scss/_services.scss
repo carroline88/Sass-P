@@ -1,25 +1,26 @@
 .services-section {
+  width: 100%;
   display: grid;
-  grid-template-columns: 360px 210px 1fr;
+  grid-template-columns: 460px 220px 1fr;
   align-items: flex-start;
   padding: 80px 0 60px;
+  box-sizing: border-box;
 
   .services-header {
-    max-width: 290px;
-
     h2 {
-      font-size: 14px;
-      line-height: 1.55;
+      font-size: 15px;
+      line-height: 1.5;
       font-weight: 500;
       color: #111;
       margin: 0;
+      max-width: 320px;
     }
   }
 
   .services-list {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 210px 1fr;
+    grid-template-columns: 220px 1fr;
 
     .services-col {
       display: flex;
@@ -45,14 +46,9 @@
     grid-template-columns: 1fr;
     gap: 30px;
 
-    .services-header {
-      max-width: 100%;
-    }
-
     .services-list {
       grid-column: 1;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
     }
   }
 }
