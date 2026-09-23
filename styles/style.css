@@ -39,6 +39,116 @@
   opacity: 1;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0 60px;
+  border-top: 1px solid #eaeaea;
+  margin-top: 60px;
+}
+.footer .logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+.footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.footer .footer-links a:hover {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.services-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 80px;
+}
+.services-section .services-header {
+  max-width: 450px;
+}
+.services-section .services-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+}
+.services-section .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.services-section .services-list div {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.services-section .services-list div:hover {
+  color: #000;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
