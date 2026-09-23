@@ -57,3 +57,42 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.hero-section {
+  padding: 40px 0 60px 0;
+}
+.hero-section .category-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(17, 17, 17, 0.6);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero-section .main-title {
+  font-size: 44px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 30px;
+}
+.hero-section .quote-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.hero-section .quote-block .quote-line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #111111;
+}
+.hero-section .quote-block .quote-text {
+  font-size: 16px;
+  color: rgba(17, 17, 17, 0.6);
+}
