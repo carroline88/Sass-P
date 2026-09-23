@@ -28,6 +28,25 @@
         color: #000;
       }
     }
+
+    .social-icons {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-left: 12px;
+
+      img {
+        width: 15px;
+        height: 15px;
+        display: block;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
