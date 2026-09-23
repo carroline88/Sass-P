@@ -1,3 +1,44 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0 40px 0;
+}
+.navbar .logo {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #111111;
+  letter-spacing: -0.5px;
+}
+.navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.navbar .nav-links a {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  text-decoration: none;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.navbar .nav-links a:hover {
+  opacity: 0.7;
+}
+.navbar .nav-links a.active {
+  opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
