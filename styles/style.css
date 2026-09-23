@@ -207,38 +207,12 @@ body {
   color: rgba(17, 17, 17, 0.6);
 }
 
-gallery-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 30px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 100px;
-}
-gallery-grid .project-card {
-  width: 100%;
-  overflow: hidden;
-}
-gallery-grid .project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-gallery-grid .project-card img:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
 .gallery-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 32px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin-top: 40px;
   margin-bottom: 80px;
 }
