@@ -5,36 +5,38 @@
   padding: 100px 0 80px;
 
   .services-header {
-    flex: 0 0 42%;
-    max-width: 440px;
+    flex: 0 0 380px;
+    max-width: 380px;
 
     h2 {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6;
       font-weight: 500;
       color: #111;
+      margin: 0;
     }
   }
 
   .services-list {
-    flex: 0 0 45%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 80px;
+    flex: 1;
+    display: grid;
+    /* Linjerar med Awards-kolumnerna under */
+    grid-template-columns: 240px 1fr;
+    padding-left: 20px;
 
     .services-col {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
 
       div {
         font-size: 13px;
-        color: #777;
+        color: #888;
         cursor: pointer;
         transition: color 0.2s ease;
 
         &:hover {
-          color: #000;
+          color: #111;
         }
       }
     }
@@ -47,14 +49,13 @@
     gap: 40px;
     padding: 60px 0;
 
-    .services-header,
-    .services-list {
-      flex: 1 1 100%;
+    .services-header {
       max-width: 100%;
     }
 
     .services-list {
-      gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 0;
     }
   }
 }
