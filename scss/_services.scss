@@ -1,0 +1,45 @@
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 80px;
+
+  .services-header {
+    max-width: 450px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111;
+    }
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    div {
+      font-size: 18px;
+      color: #333;
+      font-weight: 400;
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        color: #000;
+        transform: translateX(6px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
