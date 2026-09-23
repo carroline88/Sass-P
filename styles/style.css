@@ -282,15 +282,20 @@ body {
 }
 
 .gallery-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
   margin-top: 40px;
   margin-bottom: 80px;
 }
 .gallery-grid .project-card {
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
+  margin-bottom: 24px;
   width: 100%;
   overflow: hidden;
 }
@@ -306,4 +311,19 @@ body {
 .gallery-grid .project-card img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-grid {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
 }
