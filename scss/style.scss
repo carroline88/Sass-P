@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'nav';
+@import 'footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  color: $color-dark;
+  background-color: $color-white;
+}
+
+.home-container, .navbar, .footer {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  background-color: #FFFFFF;
+}
+
+.home-container, .navbar, .footer {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
