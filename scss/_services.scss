@@ -2,15 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 0;
-  gap: 60px;
+  padding: 100px 0 80px;
 
   .services-header {
-    flex: 1;
-    max-width: 480px;
+    flex: 0 0 42%;
+    max-width: 440px;
 
     h2 {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.6;
       font-weight: 500;
       color: #111;
@@ -18,16 +17,18 @@
   }
 
   .services-list {
+    flex: 0 0 45%;
     display: flex;
-    gap: 48px;
+    justify-content: flex-start;
+    gap: 80px;
 
     .services-col {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
 
       div {
-        font-size: 14px;
+        font-size: 13px;
         color: #777;
         cursor: pointer;
         transition: color 0.2s ease;
@@ -44,5 +45,16 @@
   .services-section {
     flex-direction: column;
     gap: 40px;
+    padding: 60px 0;
+
+    .services-header,
+    .services-list {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    .services-list {
+      gap: 40px;
+    }
   }
 }

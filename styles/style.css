@@ -122,26 +122,31 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 80px 0;
-  gap: 60px;
+  padding: 100px 0 80px;
 }
 .services-section .services-header {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 480px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+          flex: 0 0 42%;
+  max-width: 440px;
 }
 .services-section .services-header h2 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   font-weight: 500;
   color: #111;
 }
 .services-section .services-list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 48px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 80px;
 }
 .services-section .services-list .services-col {
   display: -webkit-box;
@@ -151,10 +156,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 .services-section .services-list .services-col div {
-  font-size: 14px;
+  font-size: 13px;
   color: #777;
   cursor: pointer;
   -webkit-transition: color 0.2s ease;
@@ -171,33 +176,40 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 40px;
+    padding: 60px 0;
+  }
+  .services-section .services-header,
+  .services-section .services-list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .services-section .services-list {
+    gap: 40px;
   }
 }
 .awards-section {
-  padding: 40px 0 80px;
-  border-top: 1px solid #eaeaea;
+  width: 100%;
+  padding: 20px 0 80px;
 }
-.awards-section .award-row {
+.awards-section .award-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.5fr 1.5fr 2fr 0.5fr;
-  grid-template-columns: 1.5fr 1.5fr 2fr 0.5fr;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 24px 0;
-  border-bottom: 1px solid #f2f2f2;
+  -ms-grid-columns: 240px 1fr;
+  grid-template-columns: 240px 1fr;
+  padding: 40px 0;
+  border-top: 1px solid #eaeaea;
 }
-.awards-section .award-row .award-org {
-  font-size: 15px;
-  font-weight: 700;
+.awards-section .award-block:last-child {
+  border-bottom: 1px solid #eaeaea;
+}
+.awards-section .award-block .award-org {
+  font-size: 14px;
+  font-weight: 500;
   color: #111;
 }
-.awards-section .award-row .award-category {
-  font-size: 14px;
-  color: #222;
-}
-.awards-section .award-row .award-project {
+.awards-section .award-block .award-entries {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,31 +217,60 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4px;
+  gap: 36px;
 }
-.awards-section .award-row .award-project strong {
-  font-size: 14px;
-  font-weight: 600;
+.awards-section .award-block .award-entries .award-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 1fr auto;
+  grid-template-columns: 220px 1fr auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.awards-section .award-block .award-entries .award-item .award-category {
+  font-size: 13px;
+  color: #222;
+}
+.awards-section .award-block .award-entries .award-item .award-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+.awards-section .award-block .award-entries .award-item .award-project strong {
+  font-size: 13px;
+  font-weight: 500;
   color: #111;
 }
-.awards-section .award-row .award-project small {
-  font-size: 12px;
+.awards-section .award-block .award-entries .award-item .award-project small {
+  font-size: 11px;
+  line-height: 1.5;
   color: #888;
-  line-height: 1.4;
+  max-width: 180px;
 }
-.awards-section .award-row .award-year {
-  font-size: 14px;
-  color: #999;
+.awards-section .award-block .award-entries .award-item .award-year {
+  font-size: 13px;
+  color: #222;
   text-align: right;
 }
 
 @media (max-width: 768px) {
-  .awards-section .award-row {
+  .awards-section .award-block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .awards-section .award-block .award-entries .award-item {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  .awards-section .award-row .award-year {
+  .awards-section .award-block .award-entries .award-item .award-year {
     text-align: left;
   }
 }

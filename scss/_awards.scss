@@ -1,58 +1,79 @@
 .awards-section {
-  padding: 40px 0 80px;
-  border-top: 1px solid #eaeaea;
+  width: 100%;
+  padding: 20px 0 80px;
 
-  .award-row {
+  .award-block {
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr 2fr 0.5fr;
-    align-items: flex-start;
-    padding: 24px 0;
-    border-bottom: 1px solid #f2f2f2;
+    grid-template-columns: 240px 1fr;
+    padding: 40px 0;
+    border-top: 1px solid #eaeaea;
+
+    &:last-child {
+      border-bottom: 1px solid #eaeaea;
+    }
 
     .award-org {
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 500;
       color: #111;
     }
 
-    .award-category {
-      font-size: 14px;
-      color: #222;
-    }
-
-    .award-project {
+    .award-entries {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 36px;
 
-      strong {
-        font-size: 14px;
-        font-weight: 600;
-        color: #111;
+      .award-item {
+        display: grid;
+        grid-template-columns: 220px 1fr auto;
+        align-items: flex-start;
+
+        .award-category {
+          font-size: 13px;
+          color: #222;
+        }
+
+        .award-project {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+
+          strong {
+            font-size: 13px;
+            font-weight: 500;
+            color: #111;
+          }
+
+          small {
+            font-size: 11px;
+            line-height: 1.5;
+            color: #888;
+            max-width: 180px;
+          }
+        }
+
+        .award-year {
+          font-size: 13px;
+          color: #222;
+          text-align: right;
+        }
       }
-
-      small {
-        font-size: 12px;
-        color: #888;
-        line-height: 1.4;
-      }
-    }
-
-    .award-year {
-      font-size: 14px;
-      color: #999;
-      text-align: right;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .awards-section .award-row {
+  .awards-section .award-block {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px;
 
-    .award-year {
-      text-align: left;
+    .award-entries .award-item {
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      .award-year {
+        text-align: left;
+      }
     }
   }
 }
