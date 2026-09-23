@@ -190,23 +190,25 @@
 }
 .awards-section {
   width: 100%;
-  padding: 20px 0 80px;
+  padding: 20px 0 100px;
 }
 .awards-section .award-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 240px 1fr;
-  grid-template-columns: 240px 1fr;
-  padding: 40px 0;
-  border-top: 1px solid #eaeaea;
+  /* Kolumn 1 tar 380px så att Site of the day flyttas ut till mitten */
+  -ms-grid-columns: 380px 1fr;
+  grid-template-columns: 380px 1fr;
+  padding: 44px 0;
+  border-top: 1px solid #eee;
 }
 .awards-section .award-block:last-child {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #eee;
 }
 .awards-section .award-block .award-org {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #111;
+  letter-spacing: -0.2px;
 }
 .awards-section .award-block .award-entries {
   display: -webkit-box;
@@ -221,8 +223,9 @@
 .awards-section .award-block .award-entries .award-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 1fr auto;
-  grid-template-columns: 220px 1fr auto;
+  /* Kolumn 2 (Category), Kolumn 3 (Project) och Kolumn 4 (Year) */
+  -ms-grid-columns: 240px 1fr auto;
+  grid-template-columns: 240px 1fr auto;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -243,14 +246,14 @@
 }
 .awards-section .award-block .award-entries .award-item .award-project strong {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: #111;
 }
 .awards-section .award-block .award-entries .award-item .award-project small {
   font-size: 11px;
   line-height: 1.5;
   color: #888;
-  max-width: 180px;
+  max-width: 220px;
 }
 .awards-section .award-block .award-entries .award-item .award-year {
   font-size: 13px;
@@ -258,7 +261,7 @@
   text-align: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .awards-section .award-block {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
