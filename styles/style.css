@@ -117,8 +117,8 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 460px 220px 1fr;
-  grid-template-columns: 460px 220px 1fr;
+  -ms-grid-columns: 540px 220px 220px;
+  grid-template-columns: 540px 220px 220px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -126,13 +126,15 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.services-section .services-header {
+  max-width: 440px;
+}
 .services-section .services-header h2 {
   font-size: 15px;
   line-height: 1.5;
   font-weight: 500;
   color: #111;
   margin: 0;
-  max-width: 320px;
 }
 .services-section .services-list {
   -ms-grid-column: 2;
@@ -140,8 +142,8 @@
   grid-column: 2/span 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 1fr;
-  grid-template-columns: 220px 1fr;
+  -ms-grid-columns: 220px 220px;
+  grid-template-columns: 220px 220px;
 }
 .services-section .services-list .services-col {
   display: -webkit-box;
@@ -170,6 +172,9 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .services-section .services-header {
+    max-width: 100%;
+  }
   .services-section .services-list {
     -ms-grid-column: 1;
     grid-column: 1;
@@ -186,8 +191,8 @@
 .awards-section .award-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 460px 1fr;
-  grid-template-columns: 460px 1fr;
+  -ms-grid-columns: 360px 1fr;
+  grid-template-columns: 360px 1fr;
   padding: 38px 0;
   border-top: 1px solid #eaeaea;
 }

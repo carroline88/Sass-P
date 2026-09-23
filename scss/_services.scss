@@ -1,26 +1,27 @@
 .services-section {
   width: 100%;
   display: grid;
-  grid-template-columns: 460px 220px 1fr;
+  grid-template-columns: 540px 220px 220px;
   align-items: flex-start;
   padding: 80px 0 60px;
   box-sizing: border-box;
 
   .services-header {
+    max-width: 440px;
+
     h2 {
       font-size: 15px;
       line-height: 1.5;
       font-weight: 500;
       color: #111;
       margin: 0;
-      max-width: 320px;
     }
   }
 
   .services-list {
     grid-column: 2 / span 2;
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 220px 220px;
 
     .services-col {
       display: flex;
@@ -45,6 +46,10 @@
   .services-section {
     grid-template-columns: 1fr;
     gap: 30px;
+
+    .services-header {
+      max-width: 100%;
+    }
 
     .services-list {
       grid-column: 1;
