@@ -16,7 +16,9 @@ body {
   background-color: $color-white;
 }
 
-.home-container, .navbar, .footer {
+.home-container,
+.navbar,
+.footer {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 20px;
@@ -52,7 +54,8 @@ body {
       letter-spacing: -0.3px;
 
       .highlight {
-        color: #5d5fef; /* Den lila/blå accentfärgen från Figma */
+        color: #5d5fef;
+        /* Den lila/blå accentfärgen från Figma */
       }
     }
 
