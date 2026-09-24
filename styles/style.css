@@ -449,31 +449,46 @@ body {
   grid-template-columns: 220px 1fr auto !important;
 }
 
+.home-container {
+  max-width: 1108px !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+  box-sizing: border-box !important;
+}
+
 .services-section {
   display: grid !important;
-  grid-template-columns: 460px 220px 1fr !important;
-  max-width: 1079px !important;
+  grid-template-columns: 554px 240px 1fr !important;
+  width: 100% !important;
+  max-width: 1108px !important;
   margin: 0 auto !important;
   padding: 80px 0 60px !important;
+  box-sizing: border-box !important;
+}
+
+.services-section .services-header {
+  max-width: 440px !important;
 }
 
 .services-section .services-list {
   grid-column: 2 / span 2 !important;
   display: grid !important;
-  grid-template-columns: 220px 1fr !important;
+  grid-template-columns: 240px 1fr !important;
 }
 
 .awards-section {
-  max-width: 1079px !important;
+  width: 100% !important;
+  max-width: 1108px !important;
   margin: 0 auto !important;
+  box-sizing: border-box !important;
 }
 
 .awards-section .award-block {
   display: grid !important;
-  grid-template-columns: 460px 1fr !important;
+  grid-template-columns: 554px 1fr !important;
 }
 
 .awards-section .award-item {
   display: grid !important;
-  grid-template-columns: 220px 1fr auto !important;
+  grid-template-columns: 240px 1fr auto !important;
 }
