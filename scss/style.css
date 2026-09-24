@@ -1,0 +1,353 @@
+@charset "UTF-8";
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 40px 0;
+}
+.navbar .logo {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #111111;
+  letter-spacing: -0.5px;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+}
+.navbar .nav-links a {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.navbar .nav-links a:hover {
+  opacity: 0.7;
+}
+.navbar .nav-links a.active {
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 60px;
+  border-top: 1px solid #eaeaea;
+  margin-top: 60px;
+}
+.footer .logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+.footer .footer-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.footer .footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.footer .footer-links a:hover {
+  color: #000;
+}
+.footer .footer-links .social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: 12px;
+}
+.footer .footer-links .social-icons img {
+  width: 15px;
+  height: 15px;
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.footer .footer-links .social-icons img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+.services-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 554px 240px 1fr;
+  align-items: flex-start;
+  padding: 91px 0 60px;
+  box-sizing: border-box;
+}
+.services-section .services-header {
+  max-width: 320px;
+}
+.services-section .services-header h2 {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #111;
+  margin: 0;
+}
+.services-section .services-list {
+  grid-column: 2/span 2;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+.services-section .services-list .services-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.services-section .services-list .services-col div {
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.services-section .services-list .services-col div:hover {
+  color: #000;
+}
+
+@media (max-width: 820px) {
+  .services-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 50px;
+  }
+  .services-section .services-list {
+    grid-column: 1;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.awards-section {
+  width: 100%;
+  padding: 10px 0 90px;
+  box-sizing: border-box;
+}
+.awards-section .award-block {
+  display: grid;
+  grid-template-columns: 554px 1fr;
+  padding: 38px 0;
+  border-top: 1px solid #eaeaea;
+}
+.awards-section .award-block:last-child {
+  border-bottom: 1px solid #eaeaea;
+}
+.awards-section .award-block .award-org {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+.awards-section .award-block .award-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.awards-section .award-block .award-entries .award-item {
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: flex-start;
+}
+.awards-section .award-block .award-entries .award-item .award-category {
+  font-size: 13px;
+  color: #222;
+}
+.awards-section .award-block .award-entries .award-item .award-project {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.awards-section .award-block .award-entries .award-item .award-project strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+.awards-section .award-block .award-entries .award-item .award-project small {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #777;
+  max-width: 180px;
+}
+.awards-section .award-block .award-entries .award-item .award-year {
+  font-size: 13px;
+  color: #222;
+  text-align: right;
+}
+
+@media (max-width: 820px) {
+  .awards-section .award-block {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .awards-section .award-block .award-entries .award-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .awards-section .award-block .award-entries .award-item .award-year {
+    text-align: left;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  background-color: #FFFFFF;
+}
+
+.home-container,
+.navbar,
+.footer {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.hero-section .category-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5d5fef;
+  margin-bottom: 20px;
+}
+.hero-section .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+.hero-section .hero-content .main-title {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+.hero-section .hero-content .main-title .highlight {
+  color: #5d5fef;
+  /* Den lila/blå accentfärgen från Figma */
+}
+.hero-section .hero-content .quote-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  margin-bottom: 6px;
+}
+.hero-section .hero-content .quote-block .quote-line {
+  color: #777;
+}
+.hero-section .hero-content .quote-block .quote-text {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .hero-section .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+.gallery-grid {
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.gallery-grid .project-card {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 24px;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-grid .project-card a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.gallery-grid .project-card a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.gallery-grid .project-card a img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-grid {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
+.home-container {
+  max-width: 1079px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+.services-section {
+  display: grid !important;
+  grid-template-columns: 540px 220px 1fr !important;
+  padding-top: 80px !important;
+  padding-bottom: 50px !important;
+  width: 100% !important;
+}
+.services-section .services-header {
+  max-width: 380px !important;
+}
+.services-section .services-list {
+  grid-column: 2/span 2 !important;
+  display: grid !important;
+  grid-template-columns: 220px 1fr !important;
+}
+
+.awards-section {
+  width: 100% !important;
+}
+.awards-section .award-block {
+  display: grid !important;
+  grid-template-columns: 540px 1fr !important;
+}
+.awards-section .award-block .award-entries .award-item {
+  display: grid !important;
+  grid-template-columns: 220px 1fr auto !important;
+}/*# sourceMappingURL=style.css.map */

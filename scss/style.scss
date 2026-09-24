@@ -99,14 +99,20 @@ body {
     width: 100%;
     overflow: hidden;
 
-    img {
-      width: 100%;
-      height: auto;
+    a {
       display: block;
-      transition: transform 0.3s ease;
+      width: 100%;
+      text-decoration: none;
 
-      &:hover {
-        transform: scale(1.02);
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
       }
     }
   }
