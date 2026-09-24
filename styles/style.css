@@ -551,26 +551,28 @@ body {
   width: 335px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding-top: 6px;
+  gap: 18px;
+  margin-top: 8px; 
 }
 
 .meta-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   font-size: 13px;
-  line-height: 1.5;
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 12px;
+  line-height: 1.4;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 8px;
 }
 
 .meta-label {
-  color: #777;
+  color: #999999;
+  font-weight: 400;
 }
 
 .meta-value {
-  color: #111;
-  font-weight: 600;
+  color: #111111;
+  font-weight: 500;
   text-align: right;
 }
 
