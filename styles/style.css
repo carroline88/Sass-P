@@ -523,9 +523,10 @@ body {
 .project-hero {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px 0 60px;
-  gap: 50px;
+  align-items: flex-end; 
+  padding-top: 50px;
+  margin-bottom: 61px;  
+  gap: 40px;
 }
 
 .project-hero-left {
@@ -551,18 +552,18 @@ body {
   width: 335px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-top: 8px; 
+  justify-content: space-between;
+  height: 343px;         
+  box-sizing: border-box;
 }
 
 .meta-item {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   font-size: 13px;
-  line-height: 1.4;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .meta-label {
