@@ -723,12 +723,15 @@ body {
 
 .contact-form-wrapper {
   width: 475px;
+  height: 291px; 
+  margin-top: 21px; 
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .contact-form .form-group input,
@@ -736,7 +739,7 @@ body {
   width: 100%;
   border: none;
   border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
+  padding: 8px 0;
   font-family: inherit;
   font-size: 14px;
   color: #111;
@@ -769,7 +772,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 .contact-map {
